@@ -26,6 +26,7 @@ export const hero_contants = {
   title: "Unlock Your Potential With Our Diverse Online Courses",
   subtitle:
     "Explore a world of knowledge and skills at your fingertips, from business and technology to the arts and beyond",
+  
 };
 
 export const trusted_contants = {

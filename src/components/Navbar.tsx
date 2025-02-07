@@ -12,7 +12,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="flex items-center px-6 md:px-24 h-20 ">
+    <div className="flex items-center px-6 md:px-14 h-20 ">
       <h1 className="font-bold text-[25px] tracking-wide ">Coursat.</h1>
 
       {/* Navigation links */}
@@ -57,7 +57,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div
-        className={`flex flex-col justify-between absolute top-20 right-0 w-full px-6 py-10 h-[calc(100vh-80px)] md:hidden ${
+        className={`flex flex-col justify-between absolute top-[80px] right-0 w-full px-6 py-10 h-[calc(100vh-80px)] z-40 md:hidden bg-neutral-50 ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -67,7 +67,7 @@ const Navbar = () => {
               <a
                 key={index}
                 href={item.link}
-                className="text-[18px] font-medium"
+                className="text-[18px] block font-medium"
               >
                 {item.name}
               </a>
@@ -75,21 +75,21 @@ const Navbar = () => {
           })}
         </div>
         <div className="">
-        <Button
-          text="Sing Up"
-          border="border border-black"
-          background="bg-transparent"
-          paddingX="px-5"
-          paddingY="py-3"
-        />
-        <Button
-          text="Login"
-          margin="ml-3"
-          background="bg-[#DDF247]"
-          paddingX="px-5"
-          paddingY="py-3"
-        />
-      </div>
+          <Button
+            text="Sing Up"
+            border="border border-black"
+            background="bg-transparent"
+            paddingX="px-5"
+            paddingY="py-3"
+          />
+          <Button
+            text="Login"
+            margin="ml-3"
+            background="bg-[#DDF247]"
+            paddingX="px-5"
+            paddingY="py-3"
+          />
+        </div>
       </div>
     </div>
   );
